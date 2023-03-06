@@ -177,3 +177,13 @@ Route::get('/mahasiswa', function () {
 //     $arrMahasiswa = ["Rizki Aulia","Muhammad Zaki","Fadhil Akram","Muhammad Rajish Kumar"];
 //     return view('kampus.mahasiswa')->with('mahasiswa',$arrMahasiswa);
 // });
+
+//jobsheet 3
+
+//nomor 1
+Route::get('/mahasiswa', function () {
+    $nama = 'Rizki Aulia';
+    $nilai = [80,64,30,76,95];
+    return view('mahasiswa',compact('nama','nilai'));
+});
+
